@@ -1,0 +1,195 @@
+.estiloColor {
+    background-color:#99FF99;
+}
+
+body {
+    font-size: 11px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+form {
+    font-size: 11px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.table1 {
+    font-size: 11px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    border-spacing: 0;
+}
+
+input[type=text]
+{
+    color: #979797;
+    //height: 24px;
+    padding-left: 11px;
+    text-decoration: none;
+    //background-image: url('http://i.stack.imgur.com/pbpVI.png');
+    //background-repeat: repeat-x;
+    //border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+
+    font-size: 10px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+
+    //border: 0;
+}
+
+input[type=password]
+{
+    color: #979797;
+    //height: 24px;
+    padding-left: 10px;
+    text-decoration: none;
+    //background-image: url('http://i.stack.imgur.com/pbpVI.png');
+    //background-repeat: repeat-x;
+    //border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+
+    font-size: 10px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+
+    //border: 0;
+}
+
+input[type=submit] {
+    font-size: 10px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.x-boundlist-item {
+	font-size: 9px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+/*buttons*/
+.x-btn-default-large .add {
+    background-image: url(./images/add.gif) !important;
+}
+
+.x-btn-default-small .add {
+    background-image: url(./images/add16.gif) !important;
+}
+.x-btn-default-small  .page_white_find {
+    background-image: url(./images/page_white_find.png) !important;
+}
+.x-btn-default-small  .draw_eraser {
+    background-image: url(./images/draw_eraser.png) !important;
+}
+.x-btn-default-small  .text_document {
+    background-image: url(./images/text_document.png) !important;
+}
+.x-btn-default-small  .excel_exports {
+    background-image: url(./images/excel_exports.png) !important;
+}
+.x-btn-default-small  .exit {
+    background-image: url(./images/exit.png) !important;
+}
+
+.x-btn-default-small  .pdf_exports {
+    background-image: url(../images/pdf_exports.png) !important;
+}
+
+.x-btn-default-medium .add {
+    background-image: url(./images/add24.gif) !important;
+}
+.x-btn-default-medium  .text_document {
+    background-image: url(./images/text_document.png) !important;
+}
+
+.x-grid-center-icon{
+   display:block;
+   margin:0 auto;
+   text-align:center;
+   cursor:hand;
+}
+.css-combo-estado {
+	width:100px;
+}
+
+.x-action-col-cell img.permiso_pen {
+background-image: url("../images/page_gear.png");
+}
+
+.x-action-col-cell img.permiso_can {
+background-image: url("../images/page_delete.png");
+}
+
+.x-action-col-cell img.vacaciones_pen {
+background-image: url("../images/page_gear.png");
+}
+/*
+.x-tab-default-top button,
+.x-tab-default-top .x-tab-inner {
+    height: 16px !important;	
+}
+*/
+.empleados-icon {
+	background-image: url("../images/group.png");
+	background-repeat:repeat-y;	
+}
+
+.contratos-icon {
+	background-image: url("../images/client_account_template.png");
+	background-repeat:repeat-y;
+}
+
+.asistencia-icon {
+	background-image: url("../images/session_idle_time.png");
+	background-repeat:repeat-y;
+}
+
+.tab1-icon {
+	background-image: url("../images/uno.png");
+	background-repeat:repeat-y;
+}
+.tab2-icon {
+	background-image: url("../images/dos.png");
+	background-repeat:repeat-y;
+}
+.tab3-icon {
+	background-image: url("../images/tres.png");
+	background-repeat:repeat-y;
+}
+.tab4-icon {
+	background-image: url("../images/cuatro.png");
+	background-repeat:repeat-y;
+}
+
+.seguridades-icon {
+	background-image: url("../images/account_functions.png");
+	background-repeat:repeat-y;
+}
+
+.permisos-icon {
+	background-image: url("../images/date_task.png");
+	background-repeat:repeat-y;
+}
+
+.vacaciones-icon {
+	background-image: url("../images/select_recipient.png");
+	background-repeat:repeat-y;
+}
+
+.upload-icon {
+	background-image: url("../images/image.png");
+}
+
+.center-table {
+	width: 40%;
+	margin: auto;
+	position: absolute;
+	top: 45%; 
+	left: 36%;
+	color: #4B0082;	
+}
+
+.my-fieldset {
+  background: #F1F3FB,
+  border: 1px solid red,
+}
+.my-fieldset .x-fieldset-header {
+  color: red
+}
+
+.icon-properties {
+	background-image: url(../images/pdf_exports.png) !important;
+}
