@@ -3,7 +3,7 @@ Ext.define('LoginAppDemo.view.cursos.CursosEdicion', {
     alias: 'widget.cursosEdicion',
 	id: 'cursosEdicionID',
     title: 'Curso',
-	width: 350,
+	width: 750,
 	buttonAlign:'center',
     //layout: 'fit',
 	layout: {
@@ -17,7 +17,7 @@ Ext.define('LoginAppDemo.view.cursos.CursosEdicion', {
         this.items = [
             {
                 xtype: 'form',
-				id: 'formCursosEdit',
+				id: 'formCursoEdicion',
 				bodyPadding: 2,
 				fieldDefaults: {
 					msgTarget: 'side',
@@ -28,6 +28,12 @@ Ext.define('LoginAppDemo.view.cursos.CursosEdicion', {
 				},
                 items: [
 					{
+						xtype: 'hiddenfield',
+						name: 'codigomateria'
+					},{
+						xtype: 'hiddenfield',
+						name: 'codigocurso'
+					},{
                         xtype: 'textfield',
                         name: 'nombrecurso',
                         fieldLabel: 'Curso',
@@ -51,8 +57,7 @@ Ext.define('LoginAppDemo.view.cursos.CursosEdicion', {
 								field.setValue('');
 							}
 						},
-					}
-					,{
+					},{
 						xtype: 'grid',
 						title: 'Materias',
 						itemId: 'gridCursoMateriasID',
@@ -77,11 +82,7 @@ Ext.define('LoginAppDemo.view.cursos.CursosEdicion', {
 							},
 						]
 					}, {
-						xtype: 'hiddenfield',
-						name: 'codigomateria'
-					}, {
-						xtype: 'hiddenfield',
-						name: 'codigocurso'
+						xtype: 'materiasDD',						
 					}
                 ]
             }

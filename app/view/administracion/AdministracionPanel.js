@@ -8,7 +8,7 @@ Ext.define('LoginAppDemo.view.administracion.AdministracionPanel', {
     //layout: 'border',
 	layout: 'fit',
 	//margins: '3 3 3 3',
-	//activeTab:0,
+	activeTab:1,
 	
     items:
     [

@@ -1,0 +1,17 @@
+// define a window
+ Ext.define('MyApp.view.user.Add',
+    extend: 'Ext.window.Window',
+    alias : 'widget.adduser',
+    .
+    . // Add other properties, custom properties, methods, event handlers etc..
+ });
+Now, when you want to create an instance in your user controller, you do:
+
+// create an instance
+ var view = Ext.widget('adduser'); // refer the below note!
+Note: note that there is no 'widget.'! it automatically gets added to the widget name you pass.
+
+Now, taking about passing parameters. Like Ext.create method, you should be able to pass any parameters as:
+
+ // create an instance with params
+ var view = Ext.widget('adduser', {title: 'New User title'});

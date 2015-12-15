@@ -45,6 +45,7 @@ Ext.define('LoginAppDemo.view.Viewport', {
 		'LoginAppDemo.view.cursos.CursosBusqueda',
 		'LoginAppDemo.view.cursos.CursosCenter',
 		'LoginAppDemo.view.cursos.CursosEdicion',
+		'LoginAppDemo.view.cursos.MateriasDD',
 		
 		
     ],

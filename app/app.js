@@ -55,6 +55,7 @@ Ext.require([
 	'Ext.ux.window.Notification',
 	'LoginAppDemo.user.Message',
 	'LoginAppDemo.user.Constantes',
+	'LoginAppDemo.user.MateriasDDUtil',
 ]);
 
 var message = Ext.create("LoginAppDemo.user.Message");
@@ -78,6 +79,7 @@ Ext.application({
 		"notas.NotasController",
 		"administracion.DocentesController",
 		"administracion.CursosController",
+		"administracion.MateriasDDController",
 	],
 	models: [
 		"LoginAppDemo.model.Rol",
@@ -85,6 +87,7 @@ Ext.application({
 		"LoginAppDemo.model.Nota",
 		"LoginAppDemo.model.Docente",
 		"LoginAppDemo.model.Curso",
+		"LoginAppDemo.model.Materia",
 	],
 	stores: [
 		"LoginAppDemo.store.UsuariosStore",
@@ -93,6 +96,7 @@ Ext.application({
 		"LoginAppDemo.store.NotasStore",
 		"LoginAppDemo.store.DocentesStore",
 		"LoginAppDemo.store.CursosStore",
+		"LoginAppDemo.store.MateriasStore",
 	],
 
 	//views: ["Main"],

@@ -19,6 +19,9 @@ Ext.define('LoginAppDemo.controller.administracion.CursosController', {
 			'#gridCursosID' : {
                 itemdblclick: this.seleccionarCurso,
             },
+            '#gridCursosID actioncolumn#accionesCursosID' : {
+                click: this.onActionGridCursos
+            },
         });
     },
 	
@@ -59,10 +62,42 @@ Ext.define('LoginAppDemo.controller.administracion.CursosController', {
 		console.log('FIN');	
 	},
 	
+	onActionGridCursos: function(grid,cell,row,col,e){
+		console.log('The grid onActionGridCursos() method');
+		
+		var record = grid.getStore().getAt(row);
+		
+		var action = e.target.getAttribute('class');
+		
+		me = this;
+		
+		if (action.indexOf("x-action-col-0") != -1) {
+			console.log('You chose to do edit to ' + record.get('codigocurso'));
+			me.editarUsuario(grid, record, row);
+	   } else if (action.indexOf("x-action-col-1") != -1) {
+			console.log('You chose to do Eliminar to ' + record.get('codigocurso'));
+			//me.eliminarUsuario(grid, record, row);	   
+	   }
+	},
+	
 	seleccionarCurso: function(grid, record, item, index, e, eOpts) {
         me = this;
 		me.editarUsuario(grid, record, index);
     },
+    
+    editarUsuario: function(grid, record, index) {
+		console.log('The editarUsuario method');
+		
+		var view = Ext.widget('cursosEdicion');
+		
+		var formCursoEdicion = Ext.getCmp('formCursoEdicion');
+		var valuesUsuariosEdit = formCursoEdicion.getValues();
+		console.log(valuesUsuariosEdit);
+		
+		if (formCursoEdicion) {
+			formCursoEdicion.loadRecord(record);
+		}
+	},
 	
 });
 

@@ -1,0 +1,7 @@
+{
+ firstName: 'Alex',
+ lastName: 'Caiza',
+ codigoempleado: '1',
+ codigousuario: '1',
+ roles: ['admin']
+}

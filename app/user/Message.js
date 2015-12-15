@@ -13,7 +13,6 @@ Ext.define("LoginAppDemo.user.Message", {
 		this.callParent(arguments);
 	},
   
-	//validarCedula: function(cedula) {
 	addMessage: function(mensaje, iconCls) {
   
 		this.setMensaje(mensaje);

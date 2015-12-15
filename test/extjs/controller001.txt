@@ -1,0 +1,14 @@
+Ext.define('MyApp.controller.Users', {
+    extend: 'Ext.app.Controller',
+
+    models: ['User'],
+    stores: ['AllUsers', 'AdminUsers'],
+
+    init: function() {
+        var User = this.getUserModel(),
+            allUsers = this.getAllUsersStore();
+
+        var ed = new User({name: 'Ed'});
+        allUsers.add(ed);
+    }
+});

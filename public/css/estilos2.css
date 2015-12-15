@@ -1,0 +1,92 @@
+.estiloColor {
+	background-color:#99FF99;
+}
+
+.later .x-grid-cell {
+        background-color: #FFFFFF !important;
+}
+.now .x-grid-cell {
+        background-color: #FAFAFA !important;
+}
+
+/*Estilos para las tablas*/
+.x-grid-row .custom-column { 
+    background-color: #ecf; 
+    color: #090; 
+    font-weight: bold; 
+}
+
+
+.Table
+{
+	display: table;
+	font-size: 9px;
+	width: 90%;
+	margin: 0 auto;
+	border-collapse:collapse;
+	margin:0px;padding:0px;
+}
+.Title
+{
+	display: table-caption;
+	text-align: center;
+	font-weight: bold;
+	font-size: 9px;
+	color: #006666 ;
+}
+.Heading
+{
+	display: table-row;
+	font-weight: bold;
+	text-align: center;
+	background-color:#82c0ff;
+}
+.Row
+{
+	display: table-row;
+	background-color:#FAFAFA;
+}
+
+.Cell
+{
+	display: table-cell;
+	border: solid;
+	border-width: thin;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.Cell5
+{
+	display: table-cell;
+	border: solid;
+	border-width: thin;
+	padding-left: 5px;
+	padding-right: 5px;
+	colspan: 5;
+}
+
+.custom_group .x-panel-body{
+    background-color: #DDE5E9;
+}
+.x-form-radio-group  {
+	width:210px;
+	font-size: 9px;
+}
+			
+.x-form-checkboxgroup-body {
+	font-size: 9px;
+}
+
+.smalltest .x-form-cb-label{font-size: 9px;}
+
+.x-grid-row .custom-column { 
+    background-color: #ecf; 
+    color: #090; 
+    font-weight: bold; 
+	cursor:pointer;cursor:hand;
+}
+
+.msgbox {
+	font-size: 9px;
+}
